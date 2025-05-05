@@ -1,0 +1,165 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* GLOBAL */
+  body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0b0b0b, #121212);
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 5vw;
+  }
+  
+  /* CONTAINER */
+  .container {
+    width: 100%;
+    max-width: 700px;
+    background-color: #181818;
+    padding: clamp(1rem, 5vw, 3rem);
+    border-radius: 16px;
+    box-shadow: 0 0 50px rgba(224, 185, 111, 0.15);
+    border: 1px solid #2c2c2c;
+  }
+  
+  /* HEADER */
+  header {
+    text-align: center;
+    margin-bottom: clamp(1rem, 4vw, 2.5rem);
+  }
+  
+  h1 {
+    font-size: clamp(1.3rem, 5vw, 2.4rem);
+    font-weight: 700;
+    color: #e0b96f;
+    letter-spacing: 1px;
+  }
+  
+  .sub {
+    color: #999;
+    font-size: clamp(0.85rem, 2.5vw, 1.1rem);
+    margin-top: 0.5rem;
+    max-width: 90%;
+    margin-inline: auto;
+  }
+  
+  #countdown {
+    margin-top: 1rem;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    color: #e0b96f;
+  }
+  
+  /* FORM */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 2.5vw, 2rem);
+    margin-top: 1rem;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
+    color: #ccc;
+    margin-bottom: 0.4rem;
+  }
+  
+  .note {
+    font-size: clamp(0.7rem, 2vw, 0.85rem);
+    color: #777;
+    margin-left: 4px;
+  }
+  
+  input {
+    padding: clamp(0.7rem, 2vw, 1rem);
+    background-color: #1f1f1f;
+    border: 1px solid #2e2e2e;
+    border-radius: 8px;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    color: #fff;
+  }
+  
+  input:focus {
+    border-color: #e0b96f;
+    outline: none;
+  }
+  
+  /* BUTTON */
+  button,
+  #resetButton {
+    padding: clamp(0.75rem, 2vw, 1.2rem);
+    font-size: clamp(0.95rem, 3vw, 1.1rem);
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button {
+    background-color: #e0b96f;
+    border: none;
+    color: #0b0b0b;
+  }
+  
+  button:hover {
+    background-color: #d0a950;
+  }
+  
+  #resetButton {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #e0b96f;
+    color: #e0b96f;
+  }
+  
+  #resetButton:hover {
+    background-color: #e0b96f;
+    color: #0b0b0b;
+  }
+  
+  /* THANK YOU MESSAGE */
+  .thank-you {
+    text-align: center;
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    color: #ccc;
+    margin-bottom: clamp(1rem, 2vw, 1.5rem);
+  }
+  
+  /* Extra security for ultra small screens */
+  @media screen and (max-width: 300px) {
+    body {
+      padding: 3vw;
+    }
+  
+    input,
+    button,
+    label,
+    .sub,
+    #countdown {
+      font-size: 0.9rem !important;
+    }
+  
+    .note {
+      font-size: 0.75rem !important;
+    }
+  
+    .thank-you {
+      font-size: 0.9rem !important;
+    }
+  
+    h1 {
+      font-size: 1.2rem !important;
+    }
+  }
+  

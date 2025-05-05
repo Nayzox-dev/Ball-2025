@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bal 2025 – Suggestion musicale</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>BAL 2025</h1>
+      <p class="sub">Suggère un titre musical avant le 20 mai à 21h</p>
+      <div id="countdown"></div>
+    </header>
+
+    <main>
+      <form id="musicForm" autocomplete="off">
+        <div class="input-group">
+          <label for="name">Prénom <span class="note">(prénom troll = pas ajouté)</span></label>
+          <input type="text" id="name" placeholder="Ton prénom" required />
+        </div>
+        <div class="input-group">
+          <label for="suggestion">Titre</label>
+          <input type="text" id="suggestion" placeholder="Titre de la musique" required />
+        </div>
+        <button type="submit">Envoyer ma suggestion</button>
+      </form>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
