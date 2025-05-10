@@ -1,6 +1,6 @@
 const countdown = document.getElementById('countdown');
 const form = document.getElementById('musicForm');
-const targetDate = new Date("May 20, 2025 21:00:00").getTime();
+const targetDate = new Date("June 25, 2025 21:00:00").getTime();
 
 // Countdown
 setInterval(() => {
